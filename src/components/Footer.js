@@ -1,31 +1,38 @@
 import React from 'react';
-import { Grid, Nav, NavItem } from 'react-bootstrap';
+import './Footer.css';
+import { Button } from './Button';
+import { Link } from 'react-router-dom';
 
-function Footer(/*props*/) {
+function Footer() {
   return (
-    <footer>
-      <Grid>
-        <Nav justified>
-          <NavItem
-            eventKey={1}>
-            Privacy policy
-          </NavItem>
-          <NavItem
-            eventKey={2}
-            title="Item">
-            Terms & Conditions
-          </NavItem>
-          <NavItem
-            eventKey={3}>
-            Some other professional link
-          </NavItem>
-        </Nav>
-
-        <div className="text-center small copyright">
-          © RLM 2016
+    <div className='footer-container'>
+        <div class='footer-links'>
+        <div className='footer-link-wrapper'>
+          <div class='footer-link-items'>
+            <h2>Information</h2>
+            <Link to='/sign-up'>How it works</Link>
+            <Link to='/'>Testimonials</Link>
+            <Link to='/'>Terms of Service</Link>
+          </div>
+          <div class='footer-link-items'>
+            <h2>Helpful Links</h2>
+            <Link to='/'>Contact</Link>
+            <Link to='/'>Support</Link>
+          </div>
         </div>
-      </Grid>
-    </footer>
+      </div>
+      <section class='social-media'>
+        <div class='social-media-wrap'>
+          <div class='footer-logo'>
+            <Link to='/' className='social-logo'>
+              Patient Portal
+              <i class='fab fa-typo3' />
+            </Link>
+          </div>
+          <small class='website-rights'>Patient Portal © 2021</small>
+        </div>
+      </section>
+    </div>
   );
 }
 
