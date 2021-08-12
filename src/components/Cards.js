@@ -1,5 +1,5 @@
 import React from 'react';
-import './Cards.css';
+import './css/Cards.css';
 import CardItem from './CardItem';
 
 
@@ -16,6 +16,12 @@ function Cards() {
               text='Get the details of a patient'
               label='Medical'
               path='/services'
+            />
+             <CardItem            
+              src='/images/img-4.jpg'
+              text='Get the details of a patient'
+              label='Patient Details'
+              path='/login'
             />
             </ul>
 
