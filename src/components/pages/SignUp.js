@@ -1,32 +1,38 @@
-import React from 'react';
-import '../../App.css';
-import '../HeroSection.css';
-import { Button } from '../Button';
+import React, { Component } from "react";
+import '../css/SignUp.css';
 
-function SignUp() {
-  return(
-    <div className='hero-container'>
-    <h1>Welcome to the Patient Portal</h1>
-    <p>What are you waiting for?</p>
-    <div className='hero-btns'>
-      <Button
-        className='btns'
-        buttonStyle='btn--outline'
-        buttonSize='btn--large'
-      >
-        Log In
-      </Button>
-      <Button
-        className='btns'
-        buttonStyle='btn--outline'
-        buttonSize='btn--large'
-      >
-        Sign Up
-      </Button>
-    </div>
-  </div>
-  )
+export default class SignUp extends Component {
+    render() {
+        return (
+            <div className='signup-box'>
+            <form>
+                <h2>Register</h2>
+                <div className="form-group">
+                    <label>First name</label>
+                    <input type="text" className="form-control" placeholder="First name" />
+                </div>
 
+                <div className="form-group">
+                    <label>Last name</label>
+                    <input type="text" className="form-control" placeholder="Last name" />
+                </div>
+
+                <div className="form-group">
+                    <label>Email</label>
+                    <input type="email" className="form-control" placeholder="Enter email" />
+                </div>
+
+                <div className="form-group">
+                    <label>Password</label>
+                    <input type="password" className="form-control" placeholder="Enter password" />
+                </div>
+
+                <button type="submit" className="btn btn-dark btn-lg btn-block">Register</button>
+                <p className="forgot-password text-right">
+                    Already registered <a href="/login">log in?</a>
+                </p>
+            </form>
+            </div>
+        );
+    }
 }
-
-export default SignUp;

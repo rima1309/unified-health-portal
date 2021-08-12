@@ -5,10 +5,9 @@ import Search from '../Search';
 
 function Services() {
     return (
-      <>
-      <Search/>
-      <Cards /> 
-        
+      <>      
+       <Search/>
+      <Cards />         
       </>
     );
 }

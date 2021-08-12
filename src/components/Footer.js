@@ -1,6 +1,5 @@
 import React from 'react';
 import './Footer.css';
-import { Button } from './Button';
 import { Link } from 'react-router-dom';
 
 function Footer() {
@@ -26,7 +25,7 @@ function Footer() {
           <div class='footer-logo'>
             <Link to='/' className='social-logo'>
               Patient Portal
-              <i class='fab fa-typo3' />
+              <i class='fas fa-clinic-medical' />
             </Link>
           </div>
           <small class='website-rights'>Patient Portal © 2021</small>
